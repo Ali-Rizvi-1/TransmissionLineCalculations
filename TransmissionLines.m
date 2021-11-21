@@ -10,3 +10,5 @@ y = 1.5e-6; % shunt admittance per phase perr km
 l = 200; % length of the transmission line in km 
 
 [Vs,Is] = long_transmission_line(Pr, Vr, pf_r, r, x, y, l);
+convert_to_polarform(Vs);
+convert_to_polarform(Is);
