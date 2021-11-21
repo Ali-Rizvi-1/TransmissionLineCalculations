@@ -6,7 +6,7 @@ function [Vs,Is] = long_transmission_line(Pr, Vr, pf_r, r, x, y, l)
 % Pr = receiving end power & Vr = receiving end line to line voltage
 R = r*l; % Total Rresistance per phase
 X = x*l; % Total reactance per phase
-Y = y*l; % Total shunt admittance per phase
+Y = 1i*y*l; % Total shunt admittance per phase
 Z = R + X*1i; % Total Series impedance per phase
 theta_r = rad2deg(acos(pf_r)); % receiving end theta
 

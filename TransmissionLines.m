@@ -1,5 +1,6 @@
 %function [Vs,Is] = long_transmission_line(Pr, Vr, pf_r, r, x, y, l)
 % Three-phase long transmission
+clear; clc;
 Pr = 20e6; % Receiving end power
 pf_r = 0.8; % Receiving end power factor
 Vr = 110e3; % Receiving end line to line voltage
